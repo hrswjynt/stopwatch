@@ -37,6 +37,7 @@ function clock() {
 		"clock"
 	).innerHTML = `${displayHours}:${displayMinutes}:${dispaySeconds}`;
 }
+window.setInterval(clock, 1000);
 
 // Stopwatch
 function stopwatch() {
@@ -142,5 +143,3 @@ function user8() {
 		"user-08"
 	).innerHTML = `${displayHours}:${displayMinutes}:${dispaySeconds}`;
 }
-
-window.setInterval(clock, 1000);
