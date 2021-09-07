@@ -1,0 +1,78 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Azeret Mono", "Courier New", Courier, monospace;
+}
+
+body {
+margin: 0 24px;
+}
+
+.container {
+	margin: 24px auto;
+	max-width: 500px;
+
+	&__time {
+		display: flex;
+		justify-content: space-between;
+
+		#logo {
+			flex: 1;
+
+			img {
+				height: 28px;
+			}
+		}
+
+		#time {
+			flex: 1;
+			text-align: center;
+			font-size: 28px;
+		}
+
+		.clock {
+			flex: 1;
+			text-align: right;
+			font-size: 20px;
+		}
+	}
+
+	&__buttons {
+		margin: 16px 0;
+		text-align: center;
+
+		button {
+			padding: 8px 16px;
+		}
+	}
+
+	&__user {
+		.user {
+			display: flex;
+			justify-content: space-between;
+      margin: 6px 0;
+
+			.icon {
+				flex: 1;
+			}
+
+			.name {
+				text-align: left;
+				flex: 3;
+			}
+
+			.lap-time {
+				flex: 2;
+			}
+
+			.finish {
+				flex: 1;
+
+				button {
+          padding: 6px 10px;
+				}
+			}
+		}
+	}
+}
