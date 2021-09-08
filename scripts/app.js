@@ -37,7 +37,6 @@ function clock() {
 		"clock"
 	).innerHTML = `${displayHours}:${displayMinutes}:${dispaySeconds}`;
 }
-window.setInterval(clock, 1000);
 
 // Stopwatch
 function stopwatch() {
@@ -86,60 +85,20 @@ function reset() {
 		.forEach((element) => (element.innerHTML = "00:00:00"));
 }
 
-// Finish
-function user1() {
-	twoDigits(seconds, minutes, hours);
+// Call clock
+window.setInterval(clock, 1000);
 
-	document.getElementById(
-		"user-01"
-	).innerHTML = `${displayHours}:${displayMinutes}:${dispaySeconds}`;
-}
-function user2() {
-	twoDigits(seconds, minutes, hours);
+// Finish button
+const users = document.getElementsByClassName("user");
 
-	document.getElementById(
-		"user-02"
-	).innerHTML = `${displayHours}:${displayMinutes}:${dispaySeconds}`;
-}
-function user3() {
-	twoDigits(seconds, minutes, hours);
+for (user of users) {
+	const lapTime = user.querySelector(".lap-time");
 
-	document.getElementById(
-		"user-03"
-	).innerHTML = `${displayHours}:${displayMinutes}:${dispaySeconds}`;
-}
-function user4() {
-	twoDigits(seconds, minutes, hours);
+	user.addEventListener("click", function (el) {
+		if (el.target.tagName == "BUTTON") {
+			twoDigits(seconds, minutes, hours);
 
-	document.getElementById(
-		"user-04"
-	).innerHTML = `${displayHours}:${displayMinutes}:${dispaySeconds}`;
-}
-function user5() {
-	twoDigits(seconds, minutes, hours);
-
-	document.getElementById(
-		"user-05"
-	).innerHTML = `${displayHours}:${displayMinutes}:${dispaySeconds}`;
-}
-function user6() {
-	twoDigits(seconds, minutes, hours);
-
-	document.getElementById(
-		"user-06"
-	).innerHTML = `${displayHours}:${displayMinutes}:${dispaySeconds}`;
-}
-function user7() {
-	twoDigits(seconds, minutes, hours);
-
-	document.getElementById(
-		"user-07"
-	).innerHTML = `${displayHours}:${displayMinutes}:${dispaySeconds}`;
-}
-function user8() {
-	twoDigits(seconds, minutes, hours);
-
-	document.getElementById(
-		"user-08"
-	).innerHTML = `${displayHours}:${displayMinutes}:${dispaySeconds}`;
+			lapTime.innerText = `${displayHours}:${displayMinutes}:${dispaySeconds}`;
+		}
+	});
 }
