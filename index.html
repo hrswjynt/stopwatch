@@ -6,6 +6,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Stopwatch</title>
 
+		<link rel="shortcut icon" href="./images/logo.svg" />
+
 		<!-- Styles and Fonts -->
 		<link rel="stylesheet" href="./styles/main.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,8 +16,6 @@
 			href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;700&display=swap"
 			rel="stylesheet"
 		/>
-
-		<script src="./scripts/main.js"></script>
 	</head>
 	<body>
 		<div class="container">
@@ -36,7 +36,7 @@
 					<div class="icon"><img src="./images/01.jpg" /></div>
 					<div class="name">Hilman Nugraha</div>
 					<div id="user-01" class="lap-time">00:00:00</div>
-					<div class="finish"><button onclick="user1()">Finish</button></div>
+					<div class="finish"><button>Finish</button></div>
 				</div>
 
 				<!-- User kedua -->
@@ -44,7 +44,7 @@
 					<div class="icon"><img src="./images/02.jpg" /></div>
 					<div class="name">Arini Nurfalah</div>
 					<div id="user-02" class="lap-time">00:00:00</div>
-					<div class="finish"><button onclick="user2()">Finish</button></div>
+					<div class="finish"><button>Finish</button></div>
 				</div>
 
 				<!-- User ketiga -->
@@ -52,7 +52,7 @@
 					<div class="icon"><img src="./images/03.jpg" /></div>
 					<div class="name">Taufik Hasan</div>
 					<div id="user-03" class="lap-time">00:00:00</div>
-					<div class="finish"><button onclick="user3()">Finish</button></div>
+					<div class="finish"><button>Finish</button></div>
 				</div>
 
 				<!-- User keempat -->
@@ -60,7 +60,7 @@
 					<div class="icon"><img src="./images/04.jpg" /></div>
 					<div class="name">Anggita Yati</div>
 					<div id="user-04" class="lap-time">00:00:00</div>
-					<div class="finish"><button onclick="user4()">Finish</button></div>
+					<div class="finish"><button>Finish</button></div>
 				</div>
 
 				<!-- User kelima -->
@@ -68,7 +68,7 @@
 					<div class="icon"><img src="./images/05.jpg" /></div>
 					<div class="name">Irsan Tobing</div>
 					<div id="user-05" class="lap-time">00:00:00</div>
-					<div class="finish"><button onclick="user5()">Finish</button></div>
+					<div class="finish"><button>Finish</button></div>
 				</div>
 
 				<!-- User keenam -->
@@ -76,7 +76,7 @@
 					<div class="icon"><img src="./images/06.jpg" /></div>
 					<div class="name">Aprilia Anindita</div>
 					<div id="user-06" class="lap-time">00:00:00</div>
-					<div class="finish"><button onclick="user6()">Finish</button></div>
+					<div class="finish"><button>Finish</button></div>
 				</div>
 
 				<!-- User ketujuh -->
@@ -84,7 +84,7 @@
 					<div class="icon"><img src="./images/07.jpg" /></div>
 					<div class="name">Arie Ernando</div>
 					<div id="user-07" class="lap-time">00:00:00</div>
-					<div class="finish"><button onclick="user7()">Finish</button></div>
+					<div class="finish"><button>Finish</button></div>
 				</div>
 
 				<!-- User kedelapan -->
@@ -92,7 +92,7 @@
 					<div class="icon"><img src="./images/08.jpg" /></div>
 					<div class="name">Shabrina Ulfa</div>
 					<div id="user-08" class="lap-time">00:00:00</div>
-					<div class="finish"><button onclick="user8()">Finish</button></div>
+					<div class="finish"><button>Finish</button></div>
 				</div>
 			</div>
 
@@ -103,21 +103,6 @@
 			</div>
 		</div>
 
-		<script>
-			window.onscroll = function () {
-				myFunction();
-			};
-
-			var navbar = document.getElementById("navbar");
-			var sticky = navbar.offsetTop;
-
-			function myFunction() {
-				if (window.pageYOffset >= sticky) {
-					navbar.classList.add("sticky");
-				} else {
-					navbar.classList.remove("sticky");
-				}
-			}
-		</script>
+		<script src="./scripts/main.js"></script>
 	</body>
 </html>
