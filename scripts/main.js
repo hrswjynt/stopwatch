@@ -86,8 +86,16 @@ function reset() {
 }
 
 // Finish button
-const finishButtons = document.querySelectorAll("finish");
-finishButtons.forEach((element) => {
+// let userList = document.querySelector(".container__user");
+
+// userList.addEventListener("click", deleteCheck);
+
+// function deleteCheck(e) {
+// 	console.log(e.target);
+// }
+
+const finishButtons = document.getElementsByClassName("finish");
+Array.from(finishButtons).forEach((element) => {
 	element.addEventListener("click", function (el) {
 		const hourText = el.previousSibling.innerText; // previousSibling maksudnye element sebelum finishButton yaitu laptime
 		console.log(hourText);
