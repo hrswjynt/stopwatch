@@ -62,7 +62,7 @@ function stopwatch() {
 // Start and Stop stopwatch
 function toggleStart() {
 	if (start === false) {
-		interval = window.setInterval(stopwatch, 100);
+		interval = window.setInterval(stopwatch, 1000);
 		document.getElementById("play").innerHTML = "Stop";
 		start = true;
 	} else {
