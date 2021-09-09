@@ -4,7 +4,7 @@ Menghitung waktu yang dibutuhkan perserta untuk menyelesaikan putarannya.
 
 ## Nama:
 
-Haris Maulana
+Haris Wijayanto
 
 ## NIM:
 
